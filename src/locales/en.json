@@ -1,0 +1,22 @@
+{
+  "confirmation": {
+    "message": "Are you sure you want to proceed?",
+    "header": "Confirmation",
+    "confirm_summery": "Confirmed",
+    "confirm_details": "You have accepted",
+    "rejected_summery": "Rejected",
+    "rejected_details": "You have accepted"
+  },
+
+  "validation": {
+    "required": "This field cannot be left blank. ",
+    "email": "Value is not a valid email address. ",
+    "numeric": "Value must be numeric",
+    "phone_min_length": "This field should be at least 11 characters long. ",
+    "phone_max_length": "The maximum length allowed is 11. "
+  },
+
+  "common": {
+    "role": "Role List"
+  }
+}

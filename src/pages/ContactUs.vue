@@ -1,0 +1,52 @@
+<template>
+    <div class="pages-body contact-page flex flex-column">
+        <div class="topbar p-3 flex justify-content-between flex-row align-items-center">
+            <router-link class="topbar-left ml-3 flex" to="/">
+                <div class="logo">
+                    <img src="layout/images/logo2x.png" alt=""/>
+                </div>
+            </router-link>
+            <router-link class="topbar-right mr-3 flex" to="/">
+                <Button type="button" label="DASHBOARD"
+                        class="p-button-text p-button-plain topbar-button"></Button>
+            </router-link>
+        </div>
+
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9746.74079475134!2d4.8686484347131325!3d52.35799458335991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609e2c5b47ccf%3A0x6cd478550520ca35!2sVondelpark!5e0!3m2!1str!2str!4v1606820468794!5m2!1str!2str"
+                aria-hidden="false" tabindex="0" allowtransparency="true"></iframe>
+            <span></span>
+        </div>
+
+        <div class="pages-panel">
+            <div class="card grid">
+                <div class="left-panel lg:col-6 md:col-6 sm:col-12">
+                    <h4 class="mb-3">Contact Us</h4>
+                    <p class="mb-6">Subheader of contact us will come here...</p>
+                    <InputText class="contact-input mb-3"  placeholder="Your Name" />
+                    <InputText class="contact-input mb-3" placeholder="Your E-mail" />
+                    <Textarea class="contact-input contact-message mb-6" rows="8" placeholder="Your Message"></Textarea>
+                    <Button class="mb-3" label="SEND MESSAGE"></Button>
+                </div>
+                <div class="right-panel lg:col-6 md:col-6 sm:col-12 mx-auto">
+                    <div class="grid">
+                        <div class="md:col-offset-3 md:col-6 md:col-offset-3 sm-offset-2 sm:col-8">
+                            <i class="pi pi-home mb-2 mt-5"></i>
+                            <p class="title my-3">Headquarters</p>
+                            <p>Van Beekweg 79-93 7825VC Eexterzandvoort</p>
+
+                            <i class="pi pi-briefcase mb-2 mt-5"></i>
+                            <p class="title my-3">Sales Office</p>
+                            <p>De Roodreef 89k 8502CA Oosternijkerk</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</template>
+
+<script>
+</script>

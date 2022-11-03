@@ -1,0 +1,109 @@
+@media (min-width: $mobileBreakpoint + 1) {
+    .layout-menu-slim {
+        .menu-wrapper {
+            width: 4.5rem;
+
+            .layout-menu-container {
+
+                .layout-menu {
+                    display: flex;
+                    flex-direction: column;
+                    padding-top: 1rem;
+                    overflow-y: visible;
+                    flex-grow: 1;
+
+                    > li {
+                        position: relative;
+
+                        > a {
+                            display: flex;
+                            justify-content: center;
+
+                            i {
+                                font-size: 1.5rem;
+                            }
+
+                            &:hover + .layout-menuitem-tooltip { 
+                                display: block;
+                            }
+
+                            .layout-submenu-toggler,
+                            .layout-menuitem-text {
+                                display: none;
+                            }
+                        }
+
+                        &.layout-root-menuitem {
+                            > div {
+                                display: none;
+                            }
+
+                            > ul {
+                                &.layout-menu-enter-from{
+                                    opacity: 0;
+                                    transform: none;
+                                }
+
+                                &.layout-menu-leave-to {
+                                    opacity: 0;
+                                }
+
+                                &.layout-menu-leave-active,
+                                &.layout-menu-enter-active {
+                                    transition: none;
+                                }
+                            }
+                        }
+
+                        > ul {
+                            display: none;
+                            position: absolute;
+                            top: 0;
+                            left: 4.5rem;
+                            z-index: 100;
+                            padding: .5rem;
+                            overflow: auto;
+                            max-height: 32rem;
+                            min-width: 16.5rem;
+                            border-radius: 2px;
+                        }
+
+                        &.active-menuitem {
+                            > ul {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+
+                .layout-inline-menu {
+                    > a {
+                        &:hover + .layout-inline-menu-tooltip { 
+                            display: block;
+                        }
+                    }
+
+                    .layout-inline-menu-action-panel {
+                        padding: 0;
+                    }
+
+                    .layout-inline-menu-action-panel {
+                        .layout-inline-menu-action-item {
+
+                            > a {
+                                &:hover + .layout-inline-menu-tooltip { 
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.layout-wrapper {
+            .layout-main {
+                margin-left: 4.5rem;
+            }
+        }
+    }
+}

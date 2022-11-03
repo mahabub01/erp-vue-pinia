@@ -1,0 +1,22 @@
+{
+  "confirmation": {
+    "message": "Bạn có chắc muốn tiếp tục?",
+    "header": "Xác nhận",
+    "confirm_summery": "Đã xác nhận",
+    "confirm_details": "Bạn đã chấp nhận",
+    "rejected_summery": "Phế phẩm",
+    "rejected_details": "Bạn đã chấp nhận"
+  },
+
+  "validation": {
+    "required": "Trường này không thể để trống. ",
+    "email": "Giá trị không phải là một địa chỉ email hợp lệ. ",
+    "numeric": "Giá trị phải là số. ",
+    "phone_min_length": "Trường này phải dài ít nhất 11 ký tự. ",
+    "phone_max_length": "Chiều dài tối đa cho phép là 11. "
+  },
+
+  "common": {
+    "role": "Role List"
+  }
+}
